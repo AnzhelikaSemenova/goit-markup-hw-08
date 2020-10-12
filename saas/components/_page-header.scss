@@ -1,0 +1,119 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+
+    & .item {
+      display: flex;
+    }
+  }
+
+  .site-nav {
+    display: inline-flex;
+
+    & .item:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    & .link {
+      color: $title-text-color;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: center;
+      text-decoration: none;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      transition: color $transition;
+    }
+
+    // & .link {
+    //   color: $title-text-color;
+    //   font-weight: 500;
+      
+    //   ;
+    //   text-decoration: none;
+    // }
+
+    & .link.current {
+      color: $accent-color;
+    }
+  } 
+
+  .link {
+    position: relative;
+    color: $primary-text-color;
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+  
+  .menu-contact {
+    display: flex;
+    align-items: center;
+  }
+  .contact-list {
+    margin-left: auto;
+
+    & .item:not(:last-child) {
+      margin-left: 50px;
+    }
+  }
+  
+  .auth-nav {
+    display: flex;
+
+    & .item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .auth-nav .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.87;
+    text-decoration: none;
+    transition: color $transition;
+  }
+
+  .site-nav .link:hover,
+  .site-nav .link:focus,
+  .auth-nav .link:hover,
+  .auth-nav .link:focus,
+  .footer-nav .link:hover,
+  .footer-nav .link:focus {
+    color: $accent-color;
+    transition: color $transition;
+  }
+  /*оформление майла и телефона в хедере*/
+  
+  .item .item-feauter {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  /* site-nav навигация сайта */
+.container-menu {
+  margin-left: auto;
+}
+
+.container-contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}

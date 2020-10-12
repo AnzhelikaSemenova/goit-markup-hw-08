@@ -1,0 +1,83 @@
+/*Наши партнеры*/
+
+.clients-section {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+.partner {
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.company {
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients {
+  margin: 15px;
+  width: calc((100% - 4 * 15px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 12 * 15px) / 6);
+  }
+}
+.clients-item {
+  display: flex;
+  height: 90px;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $сosial-color;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: $сosial-color;
+  transition: border-color $transition, color $transition;
+
+  &:hover {
+    color: $accent-color;
+  }
+  &:hover {
+    border-color: $accent-color;
+  }
+}
+
+.logoone {
+  width: 45px;
+  max-height: 90px;
+  fill: currentColor;
+}
+.logotwo {
+  width: 40px;
+  max-height: 90px;
+  fill: currentColor;
+}
+.logofour {
+  width: 80px;
+  max-height: 90px;
+  fill: currentColor;
+}
+.logofive {
+  width: 60px;
+  max-height: 90px;
+  fill: currentColor;
+}
+.logosix {
+  width: 90px;
+  max-height: 90px;
+  fill: currentColor;
+}

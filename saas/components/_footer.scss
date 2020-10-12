@@ -1,0 +1,129 @@
+.footer-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-nav {
+  background-color: $moz-decoration-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .link {
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  & .link:not(:last-child) {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+
+  & .adress {
+    color: $primary-bg-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+  }
+
+  & .adress-text {
+    margin-top: 0;
+    margin-bottom: 9px;
+    color: $primary-bg-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  & .container .logo {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.adress {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Футер соц-сети*/
+.additional-list {
+  justify-content: center;
+}
+
+.additional-title {
+  margin-top: 0;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+}
+.additional-item:not(:last-child) {
+  margin-right: 10px;
+}
+.basement-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(19, 16, 16, 0.1);
+  color: $primary-bg-color;
+  transition: background-color $transition;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-container {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
+
+.adress-wrapper {
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.additional {
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+.basement-social svg {
+  fill: currentColor;
+}
+.basement-social:hover {
+  background-color: $accent-color;
+}
+.basement-social:hover svg {
+  fill: $primary-bg-color;
+}

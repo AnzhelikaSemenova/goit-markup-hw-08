@@ -1,0 +1,120 @@
+/* Section секция команды */
+.nav-section {
+  background-color: $animation-direction;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.section-title-list {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.section-title-feauter {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/*оформление соц сетей нашей команды*/
+.team-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+
+  & .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .team-icon .icon-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.sicial-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $сosial-color;
+  transition: color $transition, background-color $transition,
+    border-radius $transition;
+
+  & svg {
+    fill: currentColor;
+  }
+
+  &:hover {
+    background-color: $accent-color;
+  }
+
+  &:hover svg {
+    fill: $primary-bg-color;
+  }
+}
+
+/*Оформление карточек команды*/
+.team-ticket {
+  background-color: $primary-bg-color;
+  padding: 30px 32px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.feauter-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.navigation-list {
+  margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.team-item {
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+  }
+}
